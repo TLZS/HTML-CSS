@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 730px;
+            height: 300px;
+            margin: 100px auto;
+        }
+
+        .tb-promo img {
+            width: 730px;
+            height: 300px;
+        }
+
+        .prev, 
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            /* 加了绝对定位的盒子可以直接设置高度和宽度 */
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0,0,0,.3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .prev {
+            left: 0;
+            /* 修饰矩形边框 */
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background: rgba(0,255,255,.3);
+            border-radius: 7px;
+        }
+
+        .promo-nav li {
+            float: left;
+            margin: 3px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        .promo-nav .selected {
+            background-color: #ff500f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="image/img.jpg" alt="">
+        <!-- 左侧按钮箭头 -->
+        <a href="#" class="prev"> &lt; </a>
+        <!-- 右侧按钮箭头 -->
+        <a href="#" class="next"> &gt; </a>
+        <!-- 小圆点 -->
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

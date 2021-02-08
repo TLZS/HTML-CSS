@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .nav li 权重是 11 */
+        .nav li {
+            color: blue;
+        }
+
+        /* 需求：将第一个 li 改为粉色加粗 */
+        /* .pink 权重是 10  .nav .pink的权重为20*/
+        .nav .pink {
+            color: pink;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="pink">人生四大喜事</li>
+        <li>升官</li>
+        <li>发财</li>
+        <li>毕业</li>
+        <li>中奖</li>
+    </ul>
+</body>
+</html>

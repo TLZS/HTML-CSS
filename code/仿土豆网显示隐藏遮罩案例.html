@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tudou {
+            position: relative;
+            width: 533px;
+            height: 300px;
+            background-color: red;
+            margin: 30px auto;
+        }
+
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tudou .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3) url(image/play1.jpg) no-repeat center;
+        }
+
+        /* 当鼠标经过土豆这个盒子，就让里面的遮罩层显示出来 */
+        .tudou:hover  .mask {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tudou">
+        <div class="mask"></div>
+        <img src="image/xiaomi.jpg" alt="">
+    </div>
+</body>
+</html>
